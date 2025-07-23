@@ -28,8 +28,9 @@ Activate the environment you just created:
 3. **Install Dependencies**:
 Download the requirements.txt file (it should be included in the project directory), and use pip to install all required libraries:
 
-    ```bash
-    pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
     This will install all necessary dependencies, including packages for video processing, machine learning, and face detection.
 
 
@@ -42,11 +43,20 @@ Download the requirements.txt file (it should be included in the project directo
 
 ## **Usage**
 
-Once you have the environment set up, you can run the scripts directly. For example:
+Once you have the environment set up, you can run the scripts directly.
+
+To download videos from YouTube:
+```bash
+python video_downloader.py
+```
 
 To process videos and extract face-based segments:
 ```bash
 python video_segment_extractor.py --input /path/to/your/videos --output /path/to/output/folder
+```
+To classify gender in videos:
+```bash
+python video_gender_classifier.py --input /path/to/videos --output /path/to/output/folder --result_csv gender_results.csv
 ```
 
 To extract metadata from videos and images:
@@ -54,15 +64,9 @@ To extract metadata from videos and images:
 python media_metadata_extractor.py --root /path/to/media/folder --output /path/to/output/metadata.json.gz
 ```
 
-To download videos from YouTube:
-```bash
-python video_downloader.py
-```
 
-To classify gender in videos:
-```bash
-python video_gender_classifier.py --input /path/to/videos --output /path/to/output/folder --result_csv gender_results.csv
-```
+
+
 
 
 
