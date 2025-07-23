@@ -28,9 +28,9 @@ Activate the environment you just created:
 3. **Install Dependencies**:
 Download the requirements.txt file (it should be included in the project directory), and use pip to install all required libraries. This will install all necessary dependencies, including packages for video processing, machine learning, and face detection:
 
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 
 
