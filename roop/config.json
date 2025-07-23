@@ -1,0 +1,30 @@
+{
+  "source_path": "./data/source_images",
+  "videos_paths": ["./data/target_videos"],
+  "output_path": "./output/swapped_videos",
+
+  "headless": false,
+  "frame_processors": ["face_swapper"],
+  "keep_fps": true,
+  "keep_frames": false,
+  "skip_audio": false,
+  "many_faces": false,
+  "reference_face_position": 0,
+  "reference_frame_number": 0,
+  "similar_face_distance": 0.9,
+
+  "temp_frame_format": "png",
+  "temp_frame_quality": 95,
+
+  "output_video_encoder": "libx264",
+  "output_video_quality": 20,
+
+  "max_memory": 12,
+  "execution_provider": ["cuda"],
+  "execution_threads": 8,
+  "log_level": "error",
+
+  "source_folder": "./data/multiple_faces",
+  "temp_folder": "./temp",
+  "target_folder": "./output/multiple_faces"
+}
