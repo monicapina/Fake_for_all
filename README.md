@@ -25,8 +25,9 @@ Activate the environment you just created:
     ```bash
     conda activate your_env_name
     
-    3. **Install Dependencies**:
+3. **Install Dependencies**:
 Download the requirements.txt file (it should be included in the project directory), and use pip to install all required libraries:
+
     ```bash
     pip install -r requirements.txt
 This will install all necessary dependencies, including packages for video processing, machine learning, and face detection.
