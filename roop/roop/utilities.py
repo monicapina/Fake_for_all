@@ -116,7 +116,7 @@ def get_temp_directory_path(target_path: str) -> str:
 '''
 def get_temp_directory_path(target_path: str) -> str:
     target_name, _ = os.path.splitext(os.path.basename(target_path))
-    return os.path.join("/home/mpina/dataset/Deepfake_Custom_Dataset", TEMP_DIRECTORY, target_name)
+    return os.path.join("/path/to/data", TEMP_DIRECTORY, target_name)
 
 def get_temp_output_path(target_path: str) -> str:
     temp_directory_path = get_temp_directory_path(target_path)
