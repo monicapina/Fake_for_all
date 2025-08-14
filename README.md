@@ -126,6 +126,7 @@ python roop_generator.py \
 ```
 
 > Uses each face image to generate a deepfake on each target video.
+
 > **Note:** Before running, edit the `get_temp_directory_path` function in `roop/roop/utilities.py` to replace the `/path/to/data` path with the folder you want to use for storing temporary files.
 ---
 
