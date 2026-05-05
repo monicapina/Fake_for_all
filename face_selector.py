@@ -17,7 +17,7 @@ PARAMS = {
     "eye_openness_weight": 300,
     "frontality_weight": 50,
     "occlusion_weight": 100,
-    "brisque_weight": -0.5,
+    "brisque_weight": 0.5,
     "min_face_size": 50,
     "resize_to": (224, 224)
 }
@@ -65,6 +65,7 @@ def calculate_face_score(face_path, face_analyzer):
 
     try:
         quality = -brisque.score(Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB)))
+        
     except:
         quality = -100
 
